@@ -9,15 +9,14 @@
 
 
 $rows = 10;
-$cols = 7;
-$colors = ['red','yellow','blue','gray','maroon','brown','green'];
+$cols = 10;
 $table = '';
 
-$table.='<table>';
+$table.='<table border="1">';
 for ($r=1;$r<=$rows;$r++){
     $table.='<tr>';
-    for ($c=0;$c<=$cols;$c++){
-        $table.='<td bgcolor="'.$colors[rand(0,7)].'">'.$r*$c.'</td>';
+    for ($c=1;$c<=$cols;$c++){
+        $table.='<td>'.($r*$c).'</td>';
     }
     $table.='</tr>';
 }

@@ -8,9 +8,9 @@
  */
 
 $days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-$thisDay = 'Saturday';
-foreach ($days as $day){
-    if ($day == $thisDay){
+$thisDay = date('N')-1;
+foreach ($days as $kay => $day){
+    if ($kay == $thisDay){
         echo '<b>'.$day.'</b><br>';
     }else{
         echo $day.'<br>';

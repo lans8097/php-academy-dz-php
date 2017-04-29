@@ -15,8 +15,8 @@ $table = '';
 $table.='<table>';
 for ($r=1;$r<=$rows;$r++){
     $table.='<tr>';
-    for ($c=0;$c<=$cols;$c++){
-        $table.='<td bgcolor="'.$colors[rand(0,7)].'">'.rand(1,9999).'</td>';
+    for ($c=1;$c<=$cols;$c++){
+        $table.='<td bgcolor="'.$colors[rand(0,6)].'">'.rand(1,9999).'</td>';
     }
     $table.='</tr>';
 }

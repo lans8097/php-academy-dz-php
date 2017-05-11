@@ -7,13 +7,6 @@
  * 5. Написать функцию, которая выводит список файлов в заданной директории, которые содержат искомое слово.
  * Директория и искомое слово задаются как параметры функции.
  */
-
-
-
-
-
-
-
 function myScanDir($dir, $inName = null, $inText = null)
 {
     if(!empty($dir)){
@@ -67,7 +60,6 @@ function myScanDir($dir, $inName = null, $inText = null)
 
     }
 }
-
 
 if(!empty($_POST)){
     $dir  = (!empty($_POST['dir'])) ?trim($_POST['dir']): null;

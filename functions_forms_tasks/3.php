@@ -11,7 +11,7 @@
 function deleteWordsInFile ($num )
 {
     $file = file_get_contents('text.txt');
-    echo preg_filter('#\S{'.$num.',}#u','',$file);
+    echo preg_filter('#\S{'.$num.',}#ui','',$file);
 
 }
 

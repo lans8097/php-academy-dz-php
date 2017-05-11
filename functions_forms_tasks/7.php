@@ -23,7 +23,7 @@ if(!empty($_POST)){
 
     //Если ошибок нет то продолжаем
     if(!count($errors)){
-        if(file_put_contents('message.dat', json_encode(['name'=>$name, 'text'=>$text, 'date'=> mktime()])."\n",FILE_APPEND | LOCK_EX)){
+        if(file_put_contents('message.dat', json_encode(['name'=>$name, 'text'=>$text, 'date'=> time()])."\n",FILE_APPEND | LOCK_EX)){
             //Переадрессовыеваем для избежания зацикливания
             header('location: 7.php');
         }

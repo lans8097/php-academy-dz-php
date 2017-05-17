@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #DEDEDE;
+}
+
+p,h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+span.ds{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px;
+}
+
+div.main{
+    width: 900px;
+    margin: 10px auto;
+    border: solid #828282 1px;
+    background-color: #F3F3F3;
+}
+
+div.breadCrumbs{
+    padding: 5px;
+    display: inline-block;
+}
+
+div.breadCrumbs a{
+    display: inline-block;
+
+}
+
+div.manager table {
+    width: 100%; /* Ширина таблицы */
+    border: 2px solid black; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+}
+div.manager table tr > th {
+    text-align: left; /* Выравнивание по левому краю */
+    background: #ccc; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+div.manager table tr > td {
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+
+div.manager table tr:hover {
+    background-color: #CACACA;
+}
+
+div.manager table tr > td.name a{
+    display: block;
+    width: 100%;
+}
+
+div.message{
+    display: inline-block;
+}
+
+div.message > div{
+    margin: 10px;
+    padding: 5px;
+    border: solid black 1px;
+    border-radius: 10px;
+
+}
+
+div.message > div.error {
+    border-color: red;
+    background-color: #FFA2A2;
+}
+
+div.message > div.alert {
+    border-color: #919191;
+    background-color: #DBDBDB;
+}
+
+div.message > div.good {
+    border-color: #007405;
+    background-color: #63EB6E;
+}
+
+div.main form textarea{
+    width: 875px;
+    height: 500px;
+    margin: 0 10px;
+
+}
+
+
+button[type=submit]{
+    border: solid #CACACA 1px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+button[type=submit]:disabled{
+    display: none;
+}
+
+button[type=submit]:hover{
+    border: solid #FFFFFF 1px;
+    background-color: #CACACA;
+    color: #FFFFFF;
+}

@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #DEDEDE;
+}
+
+p,h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+
+.border{
+    border: solid #888888 1px;
+}
+
+div.main{
+    padding: 5px;
+    max-width: 900px;
+    margin: 10px auto;
+    background-color:#f9f9f9;
+
+}
+
+div.messageForm{
+ width: 450px;
+}
+
+div.head {
+    background-color: #565656;
+    border-bottom: solid #D8D8D8 1px;
+    color: #F4F5F6;
+}
+
+div.head > span{
+    margin: 5px;
+}
+
+div.messageForm > div.head > span{
+    margin: 5px;
+}
+
+div.message{
+    margin: 5px;
+}
+
+
+
+div.message > div.messageText{
+    margin: 5px;
+}
+
+div.messageForm > textarea{
+    width: 435px;
+    margin: 0px 5px;
+}
+
+div.messageForm > button[type=submit]{
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}

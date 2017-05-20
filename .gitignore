@@ -6,6 +6,15 @@
 .idea/tasks.xml
 .idea/dictionaries
 
+
+tz-mvc\.idea
+tz-mvc\public\css\*
+tz-mvc\public\fonts\*
+tz-mvc\public\img\*
+tz-mvc\public\js\*
+tz-mvc\public\plagins\*
+tz-mvc\public\uploads\*
+
 # Sensitive or high-churn files:
 .idea/dataSources.ids
 .idea/dataSources.xml

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--1. Выбрать input типа checkbox.-->
+    <!--2. Выбрать input типа checkbox, НЕ отмеченный.-->
+    <!--3. Найти все элементы с id=message или message-*.-->
+    <!--4. Найти все элементы с id=message-*.-->
+    <!--5. Найти все ссылки с расширением href="...rar".-->
+    <!--6. Найти все элементы с атрибутом data-action, содержащим delete в списке (отдельно стоящий).-->
+    <!--7. Найти все элементы, у которых ЕСТЬ атрибут data-action, но он НЕ содержит delete (отдельно стоящий) в списке.-->
+    <!--8. Выбрать все чётные элементы списка #messages.-->
+    <!--9. Выбрать один элемент сразу за заголовком h3#widget-title на том же уровне вложенности.-->
+    <!--10. Выбрать все ссылки, следующие за заголовком h3#widget-title на том же уровне вложенности.-->
+    <!--11. Выбрать ссылку внутри последнего элемента списка #messages.-->
+    <style>
+        /**
+        1 input[type=checkbox]
+        2 input[type=checkbox]:not(:checked)
+        3
+        **/
+
+        *[id=message]:not(:checked){
+            color: red;
+            cursor: crosshair;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Messages:</h3>
+<ul id="messages">
+    <li id="message-1">Message 1</li>
+    <li id="message-2">Message 2</li>
+    <li id="message-3" data-action="delete">Message 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Message 4</li>
+    <li id="message-5" data-action="edit delete">Message 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://example.com/archive.rar">ссылка на архивный файл</a>
+<a href="http://example.com/doc.pdf">ссылка на документ</a>
+</body>
+
+</html>
